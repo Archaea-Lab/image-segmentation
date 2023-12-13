@@ -32,7 +32,7 @@ OUTPUT:
 
 
 
-3. Actin masks are generated through batch processing of images using the custom ImageJ macro “actinROIs_ImageBatchProcessing.ijm”. This macro first preprocesses images by subtracting background and using a Mexican Hat filter, which is particularly useful for detecting particles that can have both low and high signal intensities. Actin ROIs are then detected using ImageJ’s built-in particle detector (“Analyze Particles…”) and filtered using a high-pass size filter. The macro then refers back the previously generated cell ROI list to remove actin ROIs that are localized to cells that will not be used for analysis, ie. cells that were not detected/removed when generating the final cell mask. 
+3. Actin masks are generated through batch processing of images using the custom ImageJ macro “ImageBatchEditing.ijm”. This macro first preprocesses images by subtracting background and using a Mexican Hat filter, which is particularly useful for detecting particles that can have both low and high signal intensities. Actin ROIs are then detected using ImageJ’s built-in particle detector (“Analyze Particles…”) and filtered using a high-pass size filter. The macro then refers back the previously generated cell ROI list to remove actin ROIs that are localized to cells that will not be used for analysis, ie. cells that were not detected/removed when generating the final cell mask. 
 
 
 
